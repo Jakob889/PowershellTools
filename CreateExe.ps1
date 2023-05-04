@@ -1,7 +1,10 @@
-﻿Invoke-ps2exe -inputFile "Y:\Scripts\RenewOutlookProfile.ps1" -outputFile "C:\Users\Muster\Desktop\RenewOutlookProfile.exe" -noConsole -iconFile "Y:\Scripts\icons\script-64.ico" -title RenewOutlookProfile -version '1.0'-noOutput -virtualize
+﻿# first you need to install the ps2exe tool: Install-Module ps2exe
+
+Invoke-ps2exe -inputFile "Y:\Scripts\RenewOutlookProfile.ps1" -outputFile "C:\Users\Muster\Desktop\RenewOutlookProfile.exe" -noConsole -iconFile "Y:\Scripts\icons\script-64.ico" -title RenewOutlookProfile -version '1.0'-noOutput -virtualize
 
 
 <#
+
       inputFile = Powershell script that you want to convert to executable (file has to be UTF8 or UTF16 encoded)
      outputFile = destination executable file name or folder, defaults to inputFile with extension '.exe'
    prepareDebug = create helpful information for debugging
